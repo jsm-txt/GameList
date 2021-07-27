@@ -1,0 +1,108 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<section>
+    <div class="container-fluid  p-5">
+        <div class="row row-cols-1 row-cols-md-3">
+            
+            <div class="col p-3">
+                <div class="card">
+                    <div class="header">
+                        Sign up!
+                    </div>
+                    <div class="card-body">
+                        Sign up to access, save your list!
+                    </div>
+                    <div class="center ">
+                        <button class="button col-4 pr-auto mb-2 pl-auto">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col p-3">
+                <div class="card" class="col p-3">
+                    <div class="card-header">
+                        Top Games
+                    </div>
+                    <div class="card-body">
+                        Start by looking at the hottest games right now!
+                    </div>
+                    <div class="center ">
+                        <button class="button col-4 pr-auto mb-2 pl-auto">
+                            Top Games
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-3">
+                <div class="card">
+                    <div class="card-header">
+                        Search Games
+                    </div>
+                    <div class="card-body">
+                        Search to find your favorite game!
+                    </div>
+                    <div class="center ">
+                        <button class="button col-4 pr-auto mb-2 pl-auto">
+                            Search
+                        </button>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid  p-5">
+        <div class="row row-cols-1 row-cols-md-3">
+            
+            <div class="col p-3">
+                <div class="card" class="col p-3">
+                    <div class="card-header">
+                        Sign up!
+                    </div>
+                    <div class="card-body">
+                        Sign up to access, save your list!
+                    </div>
+                    <button> Sign Up!</button>
+                </div>
+            </div> 
+
+            <div class="col p-3">
+                <div class="card" class="col p-3">
+                    <div class="card-header">
+                        Top games!
+                    </div>
+                    <div class="card-body">
+                        Start by looking at the hottest games right now!
+                    </div>
+                    <button>To game list</button>
+                </div>
+            </div>
+
+            <div class="col p-3">
+                <div class="card">
+                    <div class="card-header">
+                        Search Games
+                    </div>
+                    <div class="card-body">
+                        Search to find your favorite game!
+                    </div>
+                    <button>
+                        Reviews
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

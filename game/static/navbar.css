@@ -1,0 +1,31 @@
+body{
+  font-family:Georgia,'Courier New';
+}
+.Title {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: rgb(51, 126, 191);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Title .h1{
+  
+  margin:none;
+  display: flex;
+  justify-content: center;
+
+}
+
+.Title .nav-link {
+  display: inline-block;
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.762);
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}

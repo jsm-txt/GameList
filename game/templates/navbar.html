@@ -1,0 +1,27 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='navbar.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<nav class="Title">
+        
+    <header>
+    <h1 class="h1">GameList </h1>  
+    <div>
+        <div class="nav-link">
+            Home
+        </div>
+
+        <div class="nav-link">
+            Sign Up
+        </div>
+
+        <div class="nav-link">
+            About
+        </div>
+    
+    </div>
+
+    </header>
+</nav>
+{% endblock %}

@@ -1,0 +1,35 @@
+.card{
+    min-height: 250px;
+    border:2px solid;
+    border-color: rgb(109, 165, 215);
+    border-radius: 20px;
+
+}
+.header{
+    background-color: rgb(51, 126, 191);
+    color:white;
+}
+
+.card-body{
+    background: rgb(255, 244, 244);
+}
+
+.button{
+    border: 1.5px solid;
+    border-radius: 8px;
+    border-color: rgb(51, 126, 191) ;
+    /* margin-left:5vw;
+    margin-right:5vw; */
+    background:white;
+    color:rgb(51, 126, 191);
+    
+}
+.button:hover{
+    color:white;
+    background:rgba(51, 126, 191, 0.68);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 244, 244);
+}
