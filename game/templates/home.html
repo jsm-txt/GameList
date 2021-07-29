@@ -71,20 +71,24 @@
 
 <section>
     <div class="container-fluid  p-5">
-        <div class="row row-cols-1 row-cols-md-4">
+        <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2">
             {% for game in data %}
             <div class="col p-2">
-                <div class="card" class="col p-3">
+                <div class="game-card" class="col p-3">
+                    <!-- <div style="color: rgb(255, 250, 250);">
+                        .
+                    </div> -->
                     
-                        <img src="{{game.image}}">
+                    <img class="img-fluid rounded mx-auto d-block card-img-top" src="{{game.image}}">
+                    
                     
 
-                    <div class="title">
+                    <div class="title p-2">
                         {{game.title}}
                     </div>
-                    <div class="genre">
+                    <div class="genre p-2">
                         {% for genre in game.genre %}
-                        <p class="genre-b">{{genre}}</p>
+                        <p class="genre-b m-0">{{genre}}</p>
                         {% endfor %}
                     </div>
                 </div>

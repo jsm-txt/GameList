@@ -4,11 +4,107 @@
        "desc":"Fortnite is a free-to-play Battle Royale game with numerous game modes for every type of game player. Watch a concert, build an island or fight.",
 
        "image":
-          "https://image.api.playstation.com/vulcan/img/rnd/202106/0806/7KJILbdp9AEmmrELwJCMJqc2.png?w=440"
+          "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-285x380.jpg"
        ,
        "genre":[
           "Battle Royale",
           "Multiplayer"
        ]
-    }
+    },
+    {
+      "title":"Valorant",
+      "desc":"Riot Games presents VALORANT: a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.",
+
+      "image":
+         "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg"
+      ,
+      "genre":[
+         "Shooter",
+         "FPS"
+      ]
+   },
+   {
+      "title":"League of Legends",
+      "desc":"Outplay & Outthink. League of Legends is a competitive, fast paced action-strategy game! For those who crave a hard fought victory, join today!",
+
+      "image":
+         "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg"
+      ,
+      "genre":[
+         "MOBA",
+         "Action"
+      ]
+   },
+   {
+      "title":"Apex Legends",
+      "desc":"Apex Legends is a free-to-play battle royale-hero shooter game developed by Respawn Entertainment and published by Electronic Arts.",
+
+      "image":
+         "https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-285x380.jpg"
+      ,
+      "genre":[
+         "Shooter",
+         "Action"
+      ]
+   },
+   {
+      "title":"Minecraft",
+      "desc":"Explore infinite worlds and build everything from the simplest of homes to the grandest of castles. Play in creative mode with unlimited resources or mine deep into the world in survival mode, crafting weapons and armor to fend off dangerous mobs.",
+
+      "image":
+      "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-285x380.jpg"
+      ,
+      "genre":[
+         "Sandbox"
+      ]
+   },
+   {
+      "title":"Fall Guys",
+      "desc":"Fall Guys is a massively multiplayer party game with up to 60 players online in a free-for-all struggle through round after round of escalating chaos until one victor remains!",
+
+      "image":
+      "https://static-cdn.jtvnw.net/ttv-boxart/Fall%20Guys:%20Ultimate%20Knockout-285x380.jpg"
+      ,
+      "genre":[
+         "Action",
+         "Multiplayer"
+      ]
+   },
+   {
+      "title":"Super Smash Bros. Ultimate",
+      "desc":"Gaming icons clash in the ultimate showdown you can play anytime, anywhere when a new entry in the Super Smash Bros.™ series arrives on the Nintendo Switch",
+
+      "image":
+      "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Smash%20Bros.%20Ultimate-285x380.jpg"
+      ,
+      "genre":[
+         "Action",
+         "Fighting"
+      ]
+   },
+   {
+      "title":"Tom Clancy's Rainbow Six Siege",
+      "desc":"Dive into explosive 5v5 gameplay, high-stakes competition, an ever-expanding experience, and thrilling PvP battles solo or with friends.",
+
+      "image":
+      "https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six%20Siege-285x380.jpg"
+      ,
+      "genre":[
+         "Action",
+         "Shooter"
+      ]
+   },
+   {
+      "title":"Street Fighter V",
+      "desc":"Experience the intensity of head-to-head battles with Street Fighter® V! Choose from 16 iconic characters, then battle against friends online or offline with a robust variety of match options.",
+
+      "image":
+      "https://static-cdn.jtvnw.net/ttv-boxart/Street%20Fighter%20V-285x380.jpg"
+      ,
+      "genre":[
+         "Action",
+         "Fighting"
+      ]
+   }
+
   ]

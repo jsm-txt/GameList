@@ -34,18 +34,25 @@
 .center{
     display: flex;
     justify-content: center;
-    background: rgb(255, 244, 244);
+    background: rgb(255, 250, 250);
     border-radius: 0 0 20px 20px;
 }
 
 img{
-    background-size: cover;
-    height: 250px;
+    
+}
+
+.title{
+    font-size: large;
+    background: rgb(255, 250, 250);
 }
 .genre p{
     display:inline-block;
 }
-
+.genre{
+    background: rgb(255, 250, 250);
+    border-radius: 0,0, 10px 10px;
+}
 .genre-b{
     font-size: smaller;
     padding: 2px;
@@ -55,4 +62,11 @@ img{
     background: rgb(51, 85, 114);
     color:white;
     font-family: "Arial";
+}
+
+.game-card{
+    border: 1.2px solid;
+    border-radius: 5px;
+    border-color: rgb(51, 85, 114);
+    background: rgb(255, 250, 250)
 }

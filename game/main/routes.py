@@ -20,4 +20,8 @@ def landingPage():
 
     return render_template("home.html", data=data)
 
+@main.route("/")
+def about():
+    """Return the about page to the user"""
+
 
