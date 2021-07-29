@@ -1,0 +1,15 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='about.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container-fluid  p-5">
+    <div class="cards m-5">
+        <div class="card-body">
+            A simple web app to list down and remember all the great game titles 
+            you have played, are currently playing and are wanting to play! currently
+            still in development. Created by Jose Salazar Mendez
+        </div>        
+    </div>
+</div> 
+{% endblock content %}

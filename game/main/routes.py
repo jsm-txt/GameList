@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for,json
+from flask.templating import render_template_string
 from game import db
 from bson.objectid import ObjectId
 import random
@@ -20,8 +21,10 @@ def landingPage():
 
     return render_template("home.html", data=data)
 
-@main.route("/")
+@main.route("/about")
 def about():
     """Return the about page to the user"""
+
+    return render_template("about.html")
 
 

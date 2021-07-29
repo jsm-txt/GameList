@@ -1,0 +1,8 @@
+.cards{
+    min-height: 250px;
+    border:2px solid;
+    border-color: rgb(51, 126, 191);
+    border-radius: 20px;
+    background: rgb(255, 250, 250);
+
+}
