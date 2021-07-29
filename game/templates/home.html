@@ -8,8 +8,11 @@
         <div class="row row-cols-1 row-cols-md-3">
             
             <div class="col p-3">
-                <div class="card">
-                    <div class="header">
+                <div class="card" style="
+                border:2px solid;
+                border-color: rgb(51, 126, 191);
+                border-radius: 20px;">
+                    <div class="header p-3">
                         Sign up!
                     </div>
                     <div class="card-body">
@@ -24,8 +27,11 @@
             </div> 
 
             <div class="col p-3">
-                <div class="card" class="col p-3">
-                    <div class="card-header">
+                <div class="card" style="
+                border:2px solid;
+                border-color: rgb(51, 126, 191);
+                border-radius: 20px;">
+                    <div class="header p-3">
                         Top Games
                     </div>
                     <div class="card-body">
@@ -33,15 +39,18 @@
                     </div>
                     <div class="center ">
                         <button class="button col-4 pr-auto mb-2 pl-auto">
-                            Top Games
+                            Games
                         </button>
                     </div>
                 </div>
             </div>
 
             <div class="col p-3">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card" style="
+                border:2px solid;
+                border-color: rgb(51, 126, 191);
+                border-radius: 20px;">
+                    <div class="header p-3" >
                         Search Games
                     </div>
                     <div class="card-body">
@@ -62,45 +71,26 @@
 
 <section>
     <div class="container-fluid  p-5">
-        <div class="row row-cols-1 row-cols-md-3">
-            
-            <div class="col p-3">
+        <div class="row row-cols-1 row-cols-md-4">
+            {% for game in data %}
+            <div class="col p-2">
                 <div class="card" class="col p-3">
-                    <div class="card-header">
-                        Sign up!
+                    
+                        <img src="{{game.image}}">
+                    
+
+                    <div class="title">
+                        {{game.title}}
                     </div>
-                    <div class="card-body">
-                        Sign up to access, save your list!
+                    <div class="genre">
+                        {% for genre in game.genre %}
+                        <p class="genre-b">{{genre}}</p>
+                        {% endfor %}
                     </div>
-                    <button> Sign Up!</button>
                 </div>
             </div> 
+            {% endfor %}
 
-            <div class="col p-3">
-                <div class="card" class="col p-3">
-                    <div class="card-header">
-                        Top games!
-                    </div>
-                    <div class="card-body">
-                        Start by looking at the hottest games right now!
-                    </div>
-                    <button>To game list</button>
-                </div>
-            </div>
-
-            <div class="col p-3">
-                <div class="card">
-                    <div class="card-header">
-                        Search Games
-                    </div>
-                    <div class="card-body">
-                        Search to find your favorite game!
-                    </div>
-                    <button>
-                        Reviews
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </section>

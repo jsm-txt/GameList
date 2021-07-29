@@ -1,0 +1,14 @@
+[
+    {
+       "title":"Fortnite",
+       "desc":"Fortnite is a free-to-play Battle Royale game with numerous game modes for every type of game player. Watch a concert, build an island or fight.",
+
+       "image":
+          "https://image.api.playstation.com/vulcan/img/rnd/202106/0806/7KJILbdp9AEmmrELwJCMJqc2.png?w=440"
+       ,
+       "genre":[
+          "Battle Royale",
+          "Multiplayer"
+       ]
+    }
+  ]

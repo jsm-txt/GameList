@@ -1,23 +1,26 @@
 .card{
     min-height: 250px;
     border:2px solid;
-    border-color: rgb(109, 165, 215);
+    border-color: rgb(51, 126, 191);
     border-radius: 20px;
 
 }
 .header{
     background-color: rgb(51, 126, 191);
     color:white;
+    border-radius:  17px 17px 0 0;
+    font-weight: bold;
+    font-size: large;
 }
 
 .card-body{
-    background: rgb(255, 244, 244);
+    background: rgb(255, 250, 250);
 }
 
 .button{
     border: 1.5px solid;
     border-radius: 8px;
-    border-color: rgb(51, 126, 191) ;
+    border-color: rgb(51, 126, 191, 0.68) ;
     /* margin-left:5vw;
     margin-right:5vw; */
     background:white;
@@ -26,10 +29,30 @@
 }
 .button:hover{
     color:white;
-    background:rgba(51, 126, 191, 0.68);
+    background:rgba(51, 126, 191, 0.913);
 }
 .center{
     display: flex;
     justify-content: center;
     background: rgb(255, 244, 244);
+    border-radius: 0 0 20px 20px;
+}
+
+img{
+    background-size: cover;
+    height: 250px;
+}
+.genre p{
+    display:inline-block;
+}
+
+.genre-b{
+    font-size: smaller;
+    padding: 2px;
+    border:1px solid;
+    border-radius: 25px;
+    border-color: rgb(51, 85, 114);
+    background: rgb(51, 85, 114);
+    color:white;
+    font-family: "Arial";
 }
