@@ -8,6 +8,9 @@ A simple web app to list down and remember all the great game titles you have pl
 </table>
 
 ## How to
+This project uses flask to run
+
+install requirements.txt and run with python3 app.py
 
 ## Features
 

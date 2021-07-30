@@ -1,3 +1,4 @@
+from typing import ContextManager
 from flask import Blueprint, render_template, request, redirect, url_for,json
 from flask.templating import render_template_string
 from game import db
@@ -34,13 +35,23 @@ def game_title(game_title):
     json_url = os.path.join(SITE_ROOT, "data", "games.json")
     data = json.load(open(json_url))
     for game in data:
-        print(game["title"])
         game_data=game
         if game["title"] == game_title:
             break
-    print(game_data)
+    suggested_genre=[]
+    for genre in game_data["genre"]:
+        suggested_genre.append(genre)
+        
+    suggested_list =[]
+    for game in data:
+        for genre in game["genre"]:
+            if game != game_data:
+                if genre in suggested_genre:
+                    suggested_list.append(game)
+    print(suggested_list)
+                 
 
-    return render_template("game.html", game_data=game_data)
+    return render_template("game.html", game_data=game_data, suggested_list=suggested_list)
 
 @main.route("/top_games")
 def top_games():
