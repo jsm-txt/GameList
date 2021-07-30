@@ -37,10 +37,8 @@
                     <div class="card-body">
                         Start by looking at the hottest games right now!
                     </div>
-                    <div class="center ">
-                        <button class="button col-4 pr-auto mb-2 pl-auto">
-                            Games
-                        </button>
+                    <div class="center p-2">
+                        <a class="card-button p-1"href="/top_games">Games</a>
                     </div>
                 </div>
             </div>
@@ -91,6 +89,10 @@
                         <p class="genre-b m-0">{{genre}}</p>
                         {% endfor %}
                     </div>
+                    <div class="center p-2">
+                        <a class="card-button p-1"href="/game/{{game.title}}">Add to list</a>
+                    </div>
+                    
                 </div>
             </div> 
             {% endfor %}

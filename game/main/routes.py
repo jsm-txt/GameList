@@ -27,4 +27,32 @@ def about():
 
     return render_template("about.html")
 
+@main.route("/game/<game_title>")
+def game_title(game_title):
+    """Return the game page to the user"""
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, "data", "games.json")
+    data = json.load(open(json_url))
+    for game in data:
+        print(game["title"])
+        game_data=game
+        if game["title"] == game_title:
+            break
+    print(game_data)
+
+    return render_template("game.html", game_data=game_data)
+
+@main.route("/top_games")
+def top_games():
+    """Return a game list page to the user"""
+    SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+    json_url = os.path.join(SITE_ROOT, "data", "games.json")
+    data = json.load(open(json_url))
+    
+
+    return render_template("top_games.html", data=data)
+
+
+
+
 

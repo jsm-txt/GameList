@@ -1,0 +1,81 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='game.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<section>
+    <div class="container-fluid p-5">
+        <div class="game-desc row p-3">
+
+            <div class="image col-4 m-0 p-0" style="">
+                <img class="img-fluid rounded" src="{{game_data.image}}">
+            </div>
+
+            <div class="card-content col-8 m-0 p-2">
+                <div class="title p-2">
+                    {{game_data.title}}
+                </div>
+                <div class="desc p-2">
+                    {{game_data.desc}}
+                </div>
+                <div class="genre p-2">
+                    {% for genre in game_data.genre %}
+                        <p class="genre-b m-0">{{genre}}</p>
+                    {% endfor %}
+                </div>
+                <div class="rating p-2">
+                    <p> Rating: data missing</p>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+</section>
+
+<section>
+    <div class="container-fluid p-5 ">
+        <div class="game-form col-6 mx-auto">
+            <h3 class="center p-1 m-1">
+                Add to game list
+            </h3>
+            <form  class="p-2">
+                <select class="form-select p-1" >
+                    <option selected>select</option>
+                    <option value="C">Completed</option>
+                    <option value="P">Currently playing</option>
+                    <option value="N">Not played</option>
+                </select>
+
+                <select class="form-select p-1" >
+                    <option selected>rating</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    
+                </select>
+                <div class="input-group">
+                    <span class="input p-2">Your review</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="center p-2">
+                    <button class="card-button" type="submit">
+                        Submit
+                    </button>                          
+                </div>
+
+            </form>
+            
+
+        </div>
+    </div> 
+</section>
+
+{% endblock content %}

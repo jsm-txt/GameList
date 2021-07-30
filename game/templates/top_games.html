@@ -1,0 +1,46 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='top_games.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<section>
+    <div class="container-fluid  p-5">
+        <h3>
+            Browse top games here
+        </h3>
+        <div class="row row-cols-1 row-cols-md-5 row-cols-sm-3">
+            {% for game in data %}
+            <div class="col p-2">
+                <div class="game-card" class="col p-3">
+                    <!-- <div style="color: rgb(255, 250, 250);">
+                        .
+                    </div> -->
+                    
+                    <img class="img-fluid rounded mx-auto d-block card-img-top" src="{{game.image}}">
+                    
+                    
+
+                    <div class="title p-2">
+                        {{game.title}}
+                    </div>
+                    <div class="genre p-2">
+                        {% for genre in game.genre %}
+                        <p class="genre-b m-0">{{genre}}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="p-2">
+                        Ratings: Data missing
+                    </div>
+                    <div class="center p-2">
+                        <a class="card-button p-1"href="/game/{{game.title}}">Add to list</a>
+                    </div>
+                    
+                </div>
+            </div> 
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
